@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neu-bg:         #e0e5ec;
+  --neu-text:       #4a4f5e;
+  --neu-text-light: #8a9bb5;
+  --neu-accent:     #6c9bcf;
+  --neu-accent-alt: #9b8ec4;
+  --neu-success:    #6db88b;
+  --neu-danger:     #e07c7c;
+  --neu-warning:    #e0a87c;
+
+  /* Extruded (raised) card */
+  --shadow-raised:
+    6px 6px 12px #b8bec7,
+    -6px -6px 12px #ffffff;
+
+  /* Inset (pressed) — inputs, active buttons */
+  --shadow-inset:
+    inset 4px 4px 8px #b8bec7,
+    inset -4px -4px 8px #ffffff;
+
+  /* Subtle raised — small elements */
+  --shadow-raised-sm:
+    3px 3px 6px #b8bec7,
+    -3px -3px 6px #ffffff;
+}
+
+body {
+  background-color: var(--neu-bg);
+  color: var(--neu-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Focus visible ring */
+*:focus-visible {
+  outline: 2px solid var(--neu-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}

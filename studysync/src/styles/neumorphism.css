@@ -1,0 +1,129 @@
+/* Neumorphism Utility Classes */
+
+.neu-card {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-raised);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.neu-card-sm {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-raised-sm);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.neu-input {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-inset);
+  border: none;
+  border-radius: 10px;
+  padding: 0.625rem 0.875rem;
+  color: var(--neu-text);
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  transition: box-shadow 0.15s ease;
+}
+
+.neu-input:focus {
+  outline: none;
+  box-shadow: var(--shadow-inset), 0 0 0 2px var(--neu-accent);
+}
+
+.neu-input::placeholder {
+  color: var(--neu-text-light);
+}
+
+.neu-btn {
+  background-color: var(--neu-bg);
+  box-shadow: var(--shadow-raised-sm);
+  border: none;
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  color: var(--neu-text);
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.neu-btn:hover {
+  box-shadow: 4px 4px 8px #b8bec7, -4px -4px 8px #ffffff;
+}
+
+.neu-btn:active {
+  box-shadow: var(--shadow-inset);
+  transform: scale(0.98);
+}
+
+.neu-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.neu-btn-accent {
+  background-color: var(--neu-accent);
+  box-shadow: var(--shadow-raised-sm);
+  border: none;
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.1s ease, opacity 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.neu-btn-accent:hover {
+  opacity: 0.9;
+}
+
+.neu-btn-accent:active {
+  box-shadow: var(--shadow-inset);
+  transform: scale(0.98);
+}
+
+.neu-btn-accent:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.neu-btn-danger {
+  background-color: var(--neu-danger);
+  box-shadow: var(--shadow-raised-sm);
+  border: none;
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.neu-btn-danger:active {
+  box-shadow: var(--shadow-inset);
+  transform: scale(0.98);
+}
+
+.neu-sidebar {
+  background-color: var(--neu-bg);
+  box-shadow: 6px 0 12px #b8bec7, -2px 0 6px #ffffff;
+  min-height: 100vh;
+  width: 240px;
+}
